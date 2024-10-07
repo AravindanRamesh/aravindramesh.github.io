@@ -15,23 +15,18 @@ body {
 header {
   background-color: #333;
   padding: 20px;
-  text-align: center;
-}
-
-header .logo {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -40,38 +35,78 @@ nav ul li a {
   font-size: 1.1rem;
 }
 
-#hero {
-  background: #007BFF;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.cta-button {
-  background-color: #fff;
-  color: #007BFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
+.social-icons a {
   color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-section {
-  padding: 100px 20px;
+#hero {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+#about {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+}
+
+.about-text h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.about-text ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.about-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#projects {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
-h2 {
+#projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.skills-grid, .projects-grid {
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -88,16 +123,17 @@ h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-button {
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: #007BFF;
   color: #fff;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
+.project-card a:hover {
   background-color: #0056b3;
 }
 
@@ -108,26 +144,17 @@ footer {
   text-align: center;
 }
 
-.social-links a {
-  color: #007BFF;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  color: #0056b3;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 @media (max-width: 768px) {
-  header, #hero, section {
-    padding: 50px 10px;
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
   }
 }
