@@ -8,59 +8,95 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Aravindan Rameshbabu</h1>
-        <p>Data Engineer | Cloud & Big Data Enthusiast</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I’m Aravindan, a Data Engineer with 3+ years of experience in designing and implementing scalable data solutions. I specialize in building cloud-native data pipelines and machine learning models.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
+<header>
+    <div class="logo">Aravindan Rameshbabu</div>
+    <nav>
         <ul>
-            <li>Programming: Python, Scala, SQL</li>
-            <li>Frameworks: Apache Spark, Hadoop, PySpark</li>
-            <li>Cloud: AWS, GCP</li>
-            <li>Databases: MySQL, BigQuery, Oracle</li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </nav>
+</header>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="project">
+<section id="hero">
+    <h1>Hi, I'm Aravindan Rameshbabu</h1>
+    <p>Senior Data Engineer | Cloud & Big Data Enthusiast</p>
+    <a href="#projects" class="cta-button">View My Projects</a>
+</section>
+
+<section id="about">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m a Data Engineer with 3+ years of experience in building cloud-native data pipelines and machine learning models. My passion lies in using data to solve complex business problems and drive insightful decisions.</p>
+    </div>
+    <div class="about-image">
+        <img src="profile.jpg" alt="Aravindan Rameshbabu">
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="icon-python"></i>
+            <h3>Python</h3>
+        </div>
+        <div class="skill-item">
+            <i class="icon-spark"></i>
+            <h3>Apache Spark</h3>
+        </div>
+        <div class="skill-item">
+            <i class="icon-gcp"></i>
+            <h3>GCP</h3>
+        </div>
+        <div class="skill-item">
+            <i class="icon-database"></i>
+            <h3>BigQuery</h3>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
             <h3>Customer Churn Prediction</h3>
-            <p>Developed a Random Forest model to predict customer churn, achieving an 80% accuracy. Leveraged Apache Spark for real-time analytics.</p>
+            <p>Developed a machine learning model to predict customer churn with 80% accuracy. Integrated Apache Spark for real-time analytics.</p>
+            <a href="https://github.com/aravindanramesh/churn-prediction" class="button">View Project</a>
         </div>
-        <div class="project">
+        <div class="project-card">
             <h3>Data Pipeline Migration to GCP</h3>
-            <p>Engineered a data pipeline that migrated data from Oracle RDBMS to BigQuery, improving performance by 20%.</p>
+            <p>Migrated data pipelines from Oracle to BigQuery, improving query performance by 20%.</p>
+            <a href="https://github.com/aravindanramesh/gcp-migration" class="button">View Project</a>
         </div>
-        <div class="project">
+        <div class="project-card">
             <h3>Real-Time Marketing Campaign</h3>
             <p>Built a real-time location-based marketing campaign using Spark Streaming and Cassandra.</p>
+            <a href="https://github.com/aravindanramesh/marketing-campaign" class="button">View Project</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:aravindanramesh910@gmail.com">aravindanramesh910@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aravindramesh910/">linkedin.com/in/aravindramesh910</a></p>
-    </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+        <a href="https://github.com/aravindanramesh" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/aravindramesh910" target="_blank">LinkedIn</a>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Aravindan Rameshbabu</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Aravindan Rameshbabu</p>
+</footer>
+
 </body>
 </html>
-
